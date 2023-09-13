@@ -20,7 +20,7 @@ const Questiondetail = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const location = useLocation();
-  const url = "http://localhost:3000";
+  const url = "https://stackoverflowclone-xr0i.onrender.com";
   const [hasDispatched, setHasDispatched] = useState(false);
   let filteredQuestions=null
   if(questionslist.data){
