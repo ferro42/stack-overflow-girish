@@ -21,7 +21,7 @@ const Subs = () => {
             },
             handler:function(response){
                 
-                axios.post('http://localhost:5000/users/verify',{ response: response})
+                axios.post('https://stackoverflowclone-xr0i.onrender.com/users/verify',{ response: response})
                     .then(res=>{
                     if(res.data.code===200){
                     
@@ -42,7 +42,7 @@ const Subs = () => {
 
     const handlepayment=(amount)=>{
         const _data={amount:amount}
-        axios.post('http://localhost:5000/users/orders',_data)
+        axios.post('https://stackoverflowclone-xr0i.onrender.com/users/orders',_data)
         .then(res=>{
             checkouthandler(res.data.data)
         })
